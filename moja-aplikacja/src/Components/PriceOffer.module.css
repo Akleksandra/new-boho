@@ -1,7 +1,7 @@
 .form{
     display:flex;
     flex-direction: column;
-    height: 320px;
+    height: 520px;
     text-align: center;
     margin-top: 100px;
     margin-bottom: 70px;
@@ -17,13 +17,14 @@
     margin-bottom: 7px;
 }
 
+button {
+    width: 130px;
+    height: 23px;
+    margin-left: 335px;
+}
+
 .count{
     width: 300px;
     margin-left: 250px;
-}
-
-.send{
-    width: 130px;
-    margin-left: 338px;
 }
 

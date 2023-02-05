@@ -7,11 +7,11 @@ const withMousePosition = (WrappedComponent) => {
       y: 0,
     };
 
-    componentDidMount (){
+    componentDidMount() {
       document.body.addEventListener(
         "mousemove",
-         this.updateMousePosition.bind(this)
-         );
+        this.updateMousePosition.bind(this)
+      );
     }
 
     updateMousePosition(e) {
@@ -23,7 +23,10 @@ const withMousePosition = (WrappedComponent) => {
     }
     render() {
       return (
-        <WrappedComponent mouseX={this.state.x} mouseY={this.state.y} {...this.props} />
+        <WrappedComponent
+          mouseX={this.state.x}
+          mouseY={this.state.y}
+          {...this.props} />
       );
     }
   }

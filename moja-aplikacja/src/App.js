@@ -10,9 +10,9 @@ function App() {
         <>
             <Header />
             <AboutUs />
-            <MoreAboutUs/>
-          <PriceOffer/>
-     </>
+            <MoreAboutUs />
+            <PriceOffer />
+        </>
     )
 };
 
