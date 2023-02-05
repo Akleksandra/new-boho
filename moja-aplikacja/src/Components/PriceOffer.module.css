@@ -1,11 +1,7 @@
 .form{
     display:flex;
     flex-direction: column;
-<<<<<<< HEAD
     height: 520px;
-=======
-    height: 320px;
->>>>>>> de3298250e55803d9c089b751f3d9a33473956cb
     text-align: center;
     margin-top: 100px;
     margin-bottom: 70px;
@@ -21,25 +17,14 @@
     margin-bottom: 7px;
 }
 
-<<<<<<< HEAD
 button {
     width: 130px;
     height: 23px;
     margin-left: 335px;
 }
 
-=======
->>>>>>> de3298250e55803d9c089b751f3d9a33473956cb
 .count{
     width: 300px;
     margin-left: 250px;
 }
 
-<<<<<<< HEAD
-=======
-.send{
-    width: 130px;
-    margin-left: 338px;
-}
-
->>>>>>> de3298250e55803d9c089b751f3d9a33473956cb

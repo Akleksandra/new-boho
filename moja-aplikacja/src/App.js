@@ -10,15 +10,9 @@ function App() {
         <>
             <Header />
             <AboutUs />
-<<<<<<< HEAD
             <MoreAboutUs />
             <PriceOffer />
         </>
-=======
-            <MoreAboutUs/>
-          <PriceOffer/>
-     </>
->>>>>>> de3298250e55803d9c089b751f3d9a33473956cb
     )
 };
 
