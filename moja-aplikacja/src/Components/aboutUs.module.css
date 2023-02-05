@@ -1,0 +1,47 @@
+
+
+p {
+   float: left;
+   height: 400px;
+   width: 412px;
+   margin-top:80px;
+   padding-top: 100px;
+   margin-left: 13px;
+   padding-right: 40px;
+   padding-left: 40px;  
+   text-align:justify;
+   background-color: rgb(244, 237, 237);
+}
+
+p:hover{
+    transform: scale(1.01);
+}
+
+.biglogo img {
+ float: left;
+ width:35%;
+ height: 500px;
+ margin-right: 63px;
+ margin-left: 69px;
+ padding-top: 30px;
+ padding-right: 10px;
+ padding-left: 48px; 
+   
+}
+
+.biglogo img:hover{
+    transform: scale(1.06);
+}
+
+.smalltent img{
+    height: 30px;
+    width: 30px;
+    margin-top: 132px;
+    margin-left: -273px;
+    position: absolute;
+    
+   
+}
+.smalltent img:hover{
+    transform: scale(1.01);
+}

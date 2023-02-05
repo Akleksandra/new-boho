@@ -1,0 +1,34 @@
+.decoration{
+    margin-left: 670px;
+   
+}
+
+
+.decoration img{
+    height: 400px;
+    width: 495px;
+    margin-left: -100px;
+    padding-right: 85px;
+    
+}
+
+.decoration img:hover{
+    transform: scale(1.01);
+}
+
+.more {
+    float: left;
+    height: 400px;
+    width: 412px;
+    margin-top:-407px;
+    padding-top: 100px;
+    margin-left: 130px;
+    padding-right: 40px;
+    padding-left: 40px;  
+    text-align:justify;
+    background-color: rgb(231, 231, 231);
+ }
+ 
+ .more :hover{
+     transform: scale(1.01);
+ }

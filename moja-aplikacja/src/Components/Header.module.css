@@ -1,0 +1,59 @@
+.wallpaper{
+    background-image: url("../../src//Images/wallspaper.jpg");
+    background-size: 130;
+    margin-top: -3%;
+    margin-left:-2%;
+    height: 500px;
+    background-size: cover;
+}
+
+.menu {
+    height: 60px;
+    background-color: rgb(212, 209, 212);
+    border:  1px black;
+    box-shadow: 5px 5px 13px 10px rgb(110, 109, 107);
+    margin-top: 2px;
+    margin-left: -5px;
+    position: relative; 
+        
+}
+
+
+.list ul, li{
+  list-style-type:none;
+  position: relative;
+  text-align: center;
+  display: block;
+  float: right;
+  margin-right: 89px;
+  cursor:context-menu;
+ 
+}
+.logocompany img{
+    border-radius: 80%;
+    height: 63px;
+    margin-top: -15px;
+    position: absolute;  
+  
+}
+
+.list li{
+    color: rgb(96, 91, 91);
+    font-size: 18px;
+    font-style:inherit;
+    font-style: bold;
+    margin-top: 6px;
+    margin-right: 160px;  
+}
+
+.list li:hover{
+    color:white;
+}
+
+
+
+
+
+
+
+
