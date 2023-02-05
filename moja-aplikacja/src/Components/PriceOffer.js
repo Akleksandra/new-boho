@@ -7,26 +7,27 @@ import styles from "./PriceOffer.module.css";
 function PriceOffer() {
 
   let [state, setState] = useState({
-    tents: "",
-    floor: "",
-    tables: "",
-    chairs: "",
-    tableware: "",
-    decorations: "",
-    lights: "",
-    heaters: "",
-    waiters: "",
-    finalprice: "",
+    tents: 0,
+    floor: 0,
+    tables: 0,
+    chairs: 0,
+    tableware: 0,
+    decorations: 0,
+    lights: 0,
+    heaters: 0,
+    waiters: 0,
+    finalprice: 0,
 
   });
 
-  let [total, setTotal] = useState(" ");
+  let [total, setTotal] = useState(0);
 
   function handleInputChange(event) {
     const target = event.target;
 
     setState({
-      [target.name]: target.value
+      [target.name]: +target.value 
+
     });
   }
 
@@ -35,10 +36,8 @@ function PriceOffer() {
       + state.tableware * 15 + state.decorations * 300 + state.lights * 200 +
       state.heaters * 150 + state.waiters * 500)
 
-    let result = calculateAll();
-    state.finalprice = result + " " + " zł";
-
   };
+
 
 
   return (
@@ -136,8 +135,8 @@ function PriceOffer() {
         name={"oblicz"}
         type="button"
         id="count"
-        value={state.button}
-        onChange={handleInputChange} />
+        onClick={calculateAll}
+         />
 
       <label className={styles.count} >
         <input
@@ -145,8 +144,8 @@ function PriceOffer() {
           type="text"
           placeholder="poglądowa cena końcowa"
           id="finalprice"
-          value={state.finalprice}
-          onChange={calculateAll}
+          value={total}
+          readOnly
 
         />
       </label>
