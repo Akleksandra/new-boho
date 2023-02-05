@@ -1,22 +1,19 @@
 import { useState } from "react";
 import styles from "./PriceOffer.module.css";
 
-
-
-
 function PriceOffer() {
 
   let [state, setState] = useState({
-    tents: 0,
-    floor: 0,
-    tables: 0,
-    chairs: 0,
-    tableware: 0,
-    decorations: 0,
-    lights: 0,
-    heaters: 0,
-    waiters: 0,
-    finalprice: 0,
+    tents: " ",
+    floor: " ",
+    tables: " ",
+    chairs: " ",
+    tableware: " ",
+    decorations: " ",
+    lights: " ",
+    heaters: " ",
+    waiters: " ",
+    finalprice: " ",
 
   });
 
@@ -24,131 +21,125 @@ function PriceOffer() {
 
   function handleInputChange(event) {
     const target = event.target;
+    console.log(target.value);
 
     setState({
-      [target.name]: +target.value 
+      ...state,
+      [target.name]: target.value,
 
     });
   }
 
   function calculateAll() {
-    setTotal(state.tents * 1000 + state.floor * 1000 + state.tables * 50 + state.chairs * 15
-      + state.tableware * 15 + state.decorations * 300 + state.lights * 200 +
-      state.heaters * 150 + state.waiters * 500)
-
+    setTotal(+state.tents * 1000 + +state.floor * 1000 + +state.tables
+      * 50 + +state.chairs * 15 + +state.tableware *
+      15 + +state.decorations * 300 + +state.lights
+      * 200 + +state.heaters * 150 + +state.waiters * 500)
   };
 
 
 
   return (
-
     <form className={styles.form} >
       <label>
         <input
-          name={"tents"}
-          type="text"
+          name="tents"
           placeholder="namiot"
-          id="tents"
+          type="number"
           value={state.tents}
           onChange={handleInputChange}
         />
       </label>
       <label>
         <input
-          name={"floor"}
-          type="text"
-          placeholder="podłoga"
-          id="floor"
+          name="floor"
+          placeholder="parkiet"
+          type="number"
           value={state.floor}
           onChange={handleInputChange}
         />
       </label>
       <label>
         <input
-          name={"tables"}
-          type="text"
+          name="tables"
           placeholder="stoły"
-          id="tables"
+          type="number"
           value={state.tables}
           onChange={handleInputChange}
         />
       </label>
       <label>
         <input
-          name={"chairs"}
-          type="text"
+          name="chairs"
           placeholder="krzesła"
-          id="chairs"
+          type="number"
           value={state.chairs}
-          onChange={handleInputChange} />
-      </label>
-      <label>
-        <input
-          name={"tableware"}
-          type="text"
-          placeholder="zastawa"
-          id="tableware"
-          value={state.tableware}
-          onChange={handleInputChange} />
-      </label>
-      <label>
-        <input
-          name={"lights"}
-          type="text"
-          placeholder="oświetlenie"
-          id="decorations"
-          value={state.lights}
           onChange={handleInputChange}
         />
       </label>
       <label>
         <input
-          name={"decorations"}
-          type="text"
+          name="tableware"
+          placeholder="zastawa"
+          type="number"
+          value={state.tableware}
+          onChange={handleInputChange}
+        />
+      </label>
+      <label>
+        <input
+          name="decorations"
           placeholder="dekoracje"
-          id="lights"
+          type="number"
           value={state.decorations}
           onChange={handleInputChange}
         />
       </label>
       <label>
         <input
-          name={"heaters"}
-          type="text"
-          placeholder="nagrzewnice"
-          id="heaters"
-          value={state.heaters}
-          onChange={handleInputChange} />
+          name="lights"
+          placeholder="oświetlenie"
+          type="number"
+          value={state.lights}
+          onChange={handleInputChange}
+        />
       </label>
       <label>
         <input
-          name={"waiters"}
-          type="text"
-          placeholder="obsługa"
-          id="waiters"
-          value={state.waiters}
+          name="heaters"
+          placeholder="nagrzewnice"
+          type="number"
+          value={state.heaters}
           onChange={handleInputChange}
         />
       </label>
 
+      <label>
+        <input
+          name="waiters"
+          placeholder="obsługa"
+          type="number"
+          value={state.waiters}
+          onChange={handleInputChange}
+        />
+      </label>
+      <label className={styles.buttonone}>
       <button
-        name={"oblicz"}
-        type="button"
-        id="count"
+        type="submit"
         onClick={calculateAll}
-         />
+      />
+      </label>
 
       <label className={styles.count} >
         <input
-          name={"result"}
-          type="text"
+          type="number"
           placeholder="poglądowa cena końcowa"
-          id="finalprice"
           value={total}
           readOnly
-
         />
       </label>
+
+      
 
     </form>
 
