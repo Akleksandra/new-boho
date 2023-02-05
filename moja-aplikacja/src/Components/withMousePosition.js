@@ -19,7 +19,7 @@ const withMousePosition = (WrappedComponent) => {
         x: e.pageX,
         y: e.pageY
       })
-      console.log(e);
+      
     }
     render() {
       return (

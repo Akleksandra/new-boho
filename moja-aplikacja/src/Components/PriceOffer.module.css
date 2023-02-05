@@ -17,14 +17,14 @@
     margin-bottom: 7px;
 }
 
-button {
+.buttonone button{
     width: 130px;
-    height: 23px;
-    margin-left: 335px;
+    height: 30px;
+    margin-left: -2px;
 }
 
 .count{
     width: 300px;
-    margin-left: 250px;
+    margin-left: 260px;
 }
 
