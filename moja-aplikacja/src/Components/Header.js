@@ -1,6 +1,5 @@
 import React from "react";
 import styles from "./Header.module.css";
-import logoCompany from "../Images/logoCompany.jpg";
 import withMousePosition from "./withMousePosition";
 
 function Header(props) {
