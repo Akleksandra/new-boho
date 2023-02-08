@@ -8,7 +8,7 @@ import namiocik from "../Images/namiocik.png";
 function AboutUs() {
   return (
     <div>
-      <div>
+      <div id="aboutus">
         <div className={styles.biglogo}>
           <img src={biglogo} alt="duże logo" />
 

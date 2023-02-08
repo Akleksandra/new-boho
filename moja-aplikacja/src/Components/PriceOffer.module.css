@@ -2,6 +2,7 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   margin-top: -40px;
+  
 }
 
 .zastawa {
@@ -10,6 +11,7 @@
   margin-top: 150px;
   margin-left: -550px;
   opacity: 0.4;
+  box-shadow:  5px 5px 10px 10px rgb(0, 0, 0);
 }
 
 .container1 {
@@ -66,5 +68,21 @@ input{
 
 .explanation {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(290px, 2fr));
+  height: 280px;
+  width: 600px;
+  border-radius: 10px;
+  margin-top: -420px;
+  margin-left: -500px;
+  font-size: 17px;
+  color: rgb(255, 255, 255);
+  position: relative;
+  padding: 50px 80px;
+  background: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.067),
+    rgba(91, 90, 90, 0.2)
+  );
+
+ 
 }
