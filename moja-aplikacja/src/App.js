@@ -4,6 +4,7 @@ import Header from "./Components/Header";
 import AboutUs from "./Components/AbousUs";
 import MoreAboutUs from "./Components/MoreAbout.Us";
 import PriceOffer from "./Components/PriceOffer";
+import Gallery from "./Components/Gallery";
 
 
 
@@ -14,6 +15,8 @@ function App() {
             <AboutUs />
             <MoreAboutUs />
             <PriceOffer />
+            <Gallery/>
+
         </div>
     )
 };
