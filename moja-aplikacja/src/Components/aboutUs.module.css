@@ -1,47 +1,47 @@
-
+.conteiner {
+  display: flex;
+  justify-content: center;
+  margin-top: 130px;
+}
 
 p {
-   float: left;
-   height: 400px;
-   width: 412px;
-   margin-top:80px;
-   padding-top: 100px;
-   margin-left: 13px;
-   padding-right: 40px;
-   padding-left: 40px;  
-   text-align:justify;
-   background-color: rgb(244, 237, 237);
+  height: 340px;
+  width: 425px;
+  margin-top: 80px;
+  padding-top: -30px;
+  padding-right: 40px;
+  padding-left: 40px;
+  text-align: justify;
+  background-color: rgba(234, 234, 234, 0.952);
 }
 
-p:hover{
-    transform: scale(1.01);
+p:hover {
+  transform: scale(1.07);
 }
 
-.biglogo img {
- float: left;
- width:35%;
- height: 500px;
- margin-right: 63px;
- margin-left: 69px;
- padding-top: 30px;
- padding-right: 10px;
- padding-left: 48px; 
-   
+.biglogo {
+  width: 28%;
+  height: 19%;
+  margin-right: 63px;
+  margin-left: 80px;
+  margin-top: 67px;
+  box-shadow: 0 10px 10px 5px rgb(120, 120, 120);
 }
 
-.biglogo img:hover{
-    transform: scale(1.06);
+.biglogo:hover {
+  transform: scale(1.06);
 }
 
-.smalltent img{
-    height: 30px;
-    width: 30px;
-    margin-top: 132px;
-    margin-left: -220px;
-    position: absolute;
-    
-   
+.h4 {
+  margin-bottom: 20px;
 }
-.smalltent img:hover{
-    transform: scale(1.01);
+
+.smalltent {
+  height: 30px;
+  width: 30px;
+  margin-left: 130px;
+}
+
+.smalltent:hover {
+  transform: scale(1);
 }

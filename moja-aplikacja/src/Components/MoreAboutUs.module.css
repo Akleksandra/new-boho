@@ -1,34 +1,30 @@
-.decoration{
-    margin-left: 670px;
-   
+.container {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
 }
 
-
-.decoration img{
-    height: 400px;
-    width: 495px;
-    margin-left: -100px;
-    padding-right: 85px;
-    
+.container img{
+  height: 35%;
+  width: 31%;
+  margin-top:-105px;
+  margin-right: -25px;
+  box-shadow: 0 10px 10px 5px rgb(120, 120, 120);
 }
 
-.decoration img:hover{
-    transform: scale(1.01);
+.container img:hover {
+  transform: scale(1.01);
 }
 
 .more {
-    float: left;
-    height: 400px;
-    width: 412px;
-    margin-top:-407px;
-    padding-top: 100px;
-    margin-left: 130px;
-    padding-right: 40px;
-    padding-left: 40px;  
-    text-align:justify;
-    background-color: rgb(231, 231, 231);
- }
- 
- .more :hover{
-     transform: scale(1.01);
- }
+  height: 35%;
+  width: 31%;
+  margin-top: -30px;
+  margin-right: 80px;
+  text-align: justify;
+  background-color: rgba(234, 234, 234, 0.952);
+}
+
+.more :hover {
+  transform: scale(1.01);
+}

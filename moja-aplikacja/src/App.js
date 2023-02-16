@@ -5,6 +5,7 @@ import AboutUs from "./Components/AbousUs";
 import MoreAboutUs from "./Components/MoreAbout.Us";
 import PriceOffer from "./Components/PriceOffer";
 import Gallery from "./Components/Gallery";
+import Sendamessage from "./Components/Sendamessage";
 
 
 
@@ -16,6 +17,7 @@ function App() {
             <MoreAboutUs />
             <PriceOffer />
             <Gallery/>
+            <Sendamessage/>
 
         </div>
     )

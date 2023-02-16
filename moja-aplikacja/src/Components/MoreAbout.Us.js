@@ -1,14 +1,11 @@
 import styles from "./MoreAboutUs.module.css";
-import ozdoby from "../Images/ozdoby.jpg"
+import bohotlo from "../Images/GalleryImg/bohotlo.jpg";
+import namiocik from "../Images/namiocik.png";
 
 
 function MoreAboutUs() {
-    return (
-        <div>
-        <div className={styles.decoration}>
-        <img src={ozdoby} alt="dekoracje">
-        </img>
-        </div>
+    return ( 
+        <div className={styles.container}>
         <p className={styles.more}>
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
         eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim 
@@ -18,6 +15,8 @@ function MoreAboutUs() {
          cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est 
          laborum."
         </p>
+        <img src={bohotlo} alt="dekoracje">
+        </img>
         </div>
 
     );

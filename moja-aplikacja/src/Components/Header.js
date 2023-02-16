@@ -13,22 +13,22 @@ function Header(props) {
 
     return (
         <div>
-            <header className={`${styles.header}`}
+         <header className={`${styles.header}`}
                 style={paralaxe}>
                 <div>
                     <div className={styles.wallpaper} style={paralaxe}></div>
                     {props.children}
                 </div>
             </header>
-            <div> <div className={styles.menu}>
+            <div>
+            <div className={styles.menu}>
                 <div className={styles.list}>
                     <ul>
-
                         <li>
                             <Link to="aboutus" spy={true}
                              smooth={true} offset={-100} duration={500}>Kontakt</Link></li>
                         <li>
-                            <Link to="aboutus" spy={true}
+                            <Link to="gallery" spy={true}
                              smooth={true} offset={-100} duration={500}>Galeria</Link>
                         </li>
                         <li>
@@ -39,7 +39,6 @@ function Header(props) {
                             <Link to="aboutus" spy={true}
                              smooth={true} offset={-100} duration={500}>O nas</Link>
                         </li>
-
                     </ul>
                 </div>
             </div>

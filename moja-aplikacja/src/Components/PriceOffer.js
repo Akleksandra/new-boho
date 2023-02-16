@@ -27,7 +27,7 @@ function PriceOffer() {
     setState({
       ...state,
       [target.name]: target.value,
-      
+
 
     });
   }
@@ -147,12 +147,10 @@ function PriceOffer() {
         </form>
       </div>
       <h2 className={styles.explanation}>
-         Cena końcowa jest poglądowa.
-          Nie obejmuje dojazdu ani dodatkowych kosztów takich jak świeże kwiaty czy katering
-          który również wchodzi w zakres naszych usług. W celu precyzyjnej wyceny skonsultuj się 
-          z nami. 
-          
-        </h2>
+        Cena końcowa jest poglądowa.
+        Nie obejmuje dojazdu ani dodatkowych kosztów takich jak świeże kwiaty czy ilość dni.
+        W celu precyzyjnej wyceny skonsultuj się z nami.
+      </h2>
     </div>
 
 
