@@ -88,13 +88,7 @@ const Gallery = () => {
 
     ]
 
-    const [model, setModel] = useState(false);
-    const [tempimgSrc, setTempImgSrc] = useState("");
-
-    const showPic = (imgSrc) => {
-        setTempImgSrc(imgSrc);
-        setModel(true)
-    }
+  
     return (
         <>
             <div>
@@ -103,8 +97,7 @@ const Gallery = () => {
             <div className={styles.pictures} id="gallery">
                 {data.map((item, index) => {
                     return (
-                        <div className={styles.pics} key={index}
-                            onClick={() => showPic(item.imgSrc)}>
+                        <div className={styles.pics} key={index}>
                             <img src={item.imgSrc} style={{ width: "95%" }} alt="#" />
                         </div>
                     )

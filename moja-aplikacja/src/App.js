@@ -6,6 +6,7 @@ import MoreAboutUs from "./Components/MoreAbout.Us";
 import PriceOffer from "./Components/PriceOffer";
 import Gallery from "./Components/Gallery";
 import Sendamessage from "./Components/Sendamessage";
+import Footer from "./Components/Footer";
 
 
 
@@ -18,6 +19,7 @@ function App() {
             <PriceOffer />
             <Gallery/>
             <Sendamessage/>
+            <Footer/>
 
         </div>
     )
