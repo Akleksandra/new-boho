@@ -3,7 +3,6 @@ import styles from "./PriceOffer.module.css";
 import zastawa from "../Images/zastawa.jpg";
 
 function PriceOffer() {
-
   let [state, setState] = useState({
     tents: " ",
     floor: " ",
@@ -32,7 +31,8 @@ function PriceOffer() {
     });
   }
 
-  function calculateAll() {
+  function calculateAll(event) {
+    event.preventDefault();
     setTotal(+state.tents * 1000 + +state.floor * 1000 + +state.tables
       * 50 + +state.chairs * 15 + +state.tableware *
       15 + +state.decorations * 300 + +state.lights
