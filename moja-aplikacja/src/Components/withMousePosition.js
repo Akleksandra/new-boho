@@ -1,4 +1,4 @@
-import React from "react";
+/*import React from "react";
 
 const withMousePosition = (WrappedComponent) => {
   class Hoc extends React.Component {
@@ -33,4 +33,4 @@ const withMousePosition = (WrappedComponent) => {
   return Hoc;
 }
 
-export default withMousePosition;
+export default withMousePosition;*/

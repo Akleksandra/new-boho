@@ -8,7 +8,7 @@ import facebook from "../Images/icons/facebook.png";
 
 function Footer() {
     return (
-        <div className={styles.container}>
+        <div className={styles.container} id="media">
             <footer id="footer" className={styles.footer}>
             <h2 className={styles.welcome}>Zapraszamy</h2>
             <div class="kontakt" className={styles.icons}>

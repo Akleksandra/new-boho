@@ -2,7 +2,7 @@ import styles from "./Sendamessage.module.css";
 
 function Sendamessage() {
     return (
-        <div className={styles.mainform}>
+        <div className={styles.mainform} id="contactform">
             <section id="formularz">
                 <form action="https://formsubmit.io/send/bohonamiot@gmail.com" method="POST" className={styles.form}>
                     <label for="mail" className={styles.email1} >Twój email:</label>
