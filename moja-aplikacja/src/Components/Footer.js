@@ -10,7 +10,7 @@ function Footer() {
     return (
         <div className={styles.container} id="media">
             <footer id="footer" className={styles.footer}>
-            <h2 className={styles.welcome}>Zapraszamy</h2>
+            <h2 className={styles.welcome}>Zapraszamy:</h2>
             <div class="kontakt" className={styles.icons}>
                     <a href="https://www.olx.pl/d/oferta/wynajem-namiotow-imprezowych-CID3018-IDPewQ0.html"><img className={styles.img} src={olx} alt="olx" /></a>
                     <a href="https://www.facebook.com/BOHO-Namiot-108795718460010"><img className={styles.img} src={facebook} alt="facebook" /></a>

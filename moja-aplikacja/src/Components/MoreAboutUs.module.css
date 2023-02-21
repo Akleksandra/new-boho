@@ -4,10 +4,10 @@
   margin-top: 100px;
 }
 
-.container img{
+.container img {
   height: 35%;
   width: 31%;
-  margin-top:-70px;
+  margin-top: -70px;
   margin-right: -25px;
   box-shadow: 0 10px 10px 5px rgb(120, 120, 120);
 }
@@ -23,8 +23,23 @@
   margin-right: 80px;
   text-align: justify;
   background-color: rgba(234, 234, 234, 0.952);
+  object-fit: cover;
 }
 
 .more :hover {
   transform: scale(1.01);
+}
+
+@media screen and (max-width: 1200px), (max-width: 1000), (max-width: 900) {
+  .container .more {
+    display: grid;
+    align-items: center;
+    font-size: 10px;
+    max-height: 90vh;
+    max-width: 50vh;
+    margin-top: 580px;
+    text-align:center;
+    width: 200%;
+    margin-right: -79px;
+  }
 }

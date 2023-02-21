@@ -1,13 +1,10 @@
-.menu .list{
+.menu .list {
   position: fixed;
   z-index: 1;
-
+  width: 100 5;
 }
 
-
-
-.list ul{
- 
+.list ul {
   display: flex;
   justify-content: center;
   background-color: rgb(212, 209, 212);
@@ -18,11 +15,10 @@
   border-radius: 8px;
   width: 100%;
   height: 50px;
-
 }
 
-
-.list ,li{
+.list,
+li {
   list-style-type: none;
   width: 100%;
   text-align: center;
@@ -34,22 +30,40 @@
   font-size: 18px;
   font-style: inherit;
   font-family: "Poppins";
-  font-style:oblique;
+  font-style: oblique;
   padding-top: 15px;
- 
+  object-fit: cover;
+}
+@media screen and (max-width: 1200px), (max-width: 1000), (max-width: 900) {
+  .list ul,
+  li {
+    font-size: 10px;
+    max-height: 20vh;
+    max-width: 47vh;
+  }
 }
 
 .list li:hover {
   color: white;
 }
 
-.wallpaper{
+.wallpaper {
   background-image: url("../../src//Images/wallspaper.jpg");
   padding-top: -100px;
-  height: 900px;
   position: relative;
   height: 500px;
   background-size: cover;
   margin-top: 60px;
+  box-shadow: 5px 5px 13px 10px rgb(70, 70, 70);
+  object-fit: cover;
+  width: 100%;
+  max-height: 80vh;
+  object-fit: cover;
+}
 
+@media screen and (max-width: 1000px) {
+  .wallpaper {
+    max-height: 25vh;
+    margin-left: -100px;
+  }
 }

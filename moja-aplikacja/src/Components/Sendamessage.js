@@ -17,8 +17,8 @@ function Sendamessage() {
                     <textarea className={styles.youmessage}
                         name="Twojawiadomość"
                         id="message"
-                        cols="30"
-                        rows="10">
+                        cols="45"
+                        rows="18">
                     </textarea>
                     <input className={styles.button} value="Wyślij"
                         type="submit" />
