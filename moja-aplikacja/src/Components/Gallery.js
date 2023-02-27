@@ -87,19 +87,19 @@ const Gallery = () => {
 
 
     ]
-    const [model, setModel] = useState(false);
-    const [tempImgSrc, setTempImgSrc] = useState("");
+    const [window, setWindow] = useState(false);
+    const [bigImgSrc, setBigImgSrc] = useState("");
     const getImg = (imgSrc) => {
-        setTempImgSrc(imgSrc);
-        setModel(true);
+        setBigImgSrc(imgSrc);
+        setWindow(true);
 
     }
 
     return (
         <>
             <div>
-            <div className={model? "model open" :"model"}>
-            <img src={tempImgSrc} alt="#"/>
+            <div className={window? "model open" :"model"}>
+            <img src={bigImgSrc} alt="#"/>
             </div>
             </div>
             <div className={styles.pictures} id="gallery">
