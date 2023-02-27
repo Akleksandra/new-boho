@@ -65,13 +65,13 @@
     z-index: 999;
 }
 
-.model_open{
+.window .open{
     visibility: visible;
     opacity: 1;
     transform: scale(1);
 }
 
-.model img{
+.window img{
     width: auto;
     max-width: 100%;
     max-height: 100%;

@@ -98,7 +98,7 @@ const Gallery = () => {
     return (
         <>
             <div>
-            <div className={window? "model open" :"model"}>
+            <div className={window? "window open" :"window"}>
             <img src={bigImgSrc} alt="#"/>
             </div>
             </div>
