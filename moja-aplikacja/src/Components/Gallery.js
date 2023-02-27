@@ -75,29 +75,37 @@ const Gallery = () => {
             imgSrc: deco,
         },
         {
-            id:14 ,
+            id: 14,
             imgSrc: stol,
         },
         {
-            id:15 ,
+            id: 15,
             imgSrc: sauny,
         },
-        
-        
+
+
 
 
     ]
+    const [model, setModel] = useState(false);
+    const [tempImgSrc, setTempImgSrc] = useState("");
+    const getImg = (imgSrc) => {
+        setTempImgSrc(imgSrc);
+        setModel(true);
 
-  
+    }
+
     return (
         <>
             <div>
-
+            <div className={model? "model open" :"model"}>
+            <img src={tempImgSrc} alt="#"/>
+            </div>
             </div>
             <div className={styles.pictures} id="gallery">
                 {data.map((item, index) => {
                     return (
-                        <div className={styles.pics} key={index}>
+                        <div className={styles.pics} key={index} onClick={() => getImg(item.imgSrc)}>
                             <img src={item.imgSrc} style={{ width: "95%" }} alt="#" />
                         </div>
                     )
