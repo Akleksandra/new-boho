@@ -1,0 +1,36 @@
+{
+  "files": {
+    "main.css": "/static/css/main.53739a73.css",
+    "main.js": "/static/js/main.c7c18649.js",
+    "static/js/787.00a70a93.chunk.js": "/static/js/787.00a70a93.chunk.js",
+    "static/media/tence.jpg": "/static/media/tence.7a16444bb0ee86450d88.jpg",
+    "static/media/namiot2.jpg": "/static/media/namiot2.6d59a98ed8289f7bd35b.jpg",
+    "static/media/oczko.jpg": "/static/media/oczko.a668fd0488922931cb65.jpg",
+    "static/media/namiot1.jpg": "/static/media/namiot1.20063ea4122aab399b2a.jpg",
+    "static/media/bemary.jpg": "/static/media/bemary.9cb28d453771a22cd96d.jpg",
+    "static/media/stolik.jpg": "/static/media/stolik.f4f3f91a5ae4328262d9.jpg",
+    "static/media/plecynasali.jpg": "/static/media/plecynasali.b6aad087667194ec0f8c.jpg",
+    "static/media/front.jpg": "/static/media/front.c9ef60cc4799e5331784.jpg",
+    "static/media/bohotlo.jpg": "/static/media/bohotlo.03a02e6b589b1a3070ca.jpg",
+    "static/media/deco.jpg": "/static/media/deco.f3be149840f316cf5c2f.jpg",
+    "static/media/festiwalsaun1.jpg": "/static/media/festiwalsaun1.649c883d1af2448e5d34.jpg",
+    "static/media/festiwalsaun2.jpg": "/static/media/festiwalsaun2.6d8aeff2ca48dc97592e.jpg",
+    "static/media/sauny.jpg": "/static/media/sauny.0f662ae193c769a75f0e.jpg",
+    "static/media/wallspaper.jpg": "/static/media/wallspaper.3be56a8989ebdfda30c7.jpg",
+    "static/media/biglogo.jpg": "/static/media/biglogo.24b4555ec6b75693966b.jpg",
+    "static/media/dodacto.jpg": "/static/media/dodacto.425455d9ec1c13ad478c.jpg",
+    "static/media/zastawa.jpg": "/static/media/zastawa.c81a4ef1061a710c4059.jpg",
+    "static/media/stol.jpg": "/static/media/stol.0b05187eafc2682b8b5a.jpg",
+    "static/media/pixa.jpg": "/static/media/pixa.497caa5a4ffa02ce6a68.jpg",
+    "static/media/namiocik.png": "/static/media/namiocik.ace3327761f1b7b2e3ad.png",
+    "static/media/instagram-nowa-ikona_1057-2227.jpg": "/static/media/instagram-nowa-ikona_1057-2227.aea9cd39707832b57d1b.jpg",
+    "index.html": "/index.html",
+    "main.53739a73.css.map": "/static/css/main.53739a73.css.map",
+    "main.c7c18649.js.map": "/static/js/main.c7c18649.js.map",
+    "787.00a70a93.chunk.js.map": "/static/js/787.00a70a93.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.53739a73.css",
+    "static/js/main.c7c18649.js"
+  ]
+}
