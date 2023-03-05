@@ -18,8 +18,6 @@ import stol from "../Images/GalleryImg/stol.jpg";
 import sauny from "../Images/GalleryImg/sauny.jpg";
 
 
-
-
 const Gallery = () => {
     let data = [
         {
@@ -82,30 +80,46 @@ const Gallery = () => {
             id: 15,
             imgSrc: sauny,
         },
-
-
-
-
     ]
+
+
     const [window, setWindow] = useState(false);
     const [bigImgSrc, setBigImgSrc] = useState("");
+    const [isActive, setIsActive] = useState(true);
+
+    const [open, setOpen]= useState(false);
+
     const getImg = (imgSrc) => {
         setBigImgSrc(imgSrc);
         setWindow(true);
 
     }
+    
+
+    const handleClick = event => {
+        setIsActive(current => !current);
+    };
+    const closePopup =()=>{
+
+    }
+
 
     return (
         <>
-            <div>
-            <div className={window? "window open" :"window"}>
-            <img src={bigImgSrc} alt="#"/>
+            <div className={isActive ? `${styles.popup}` : ''} onClick={handleClick}>
+                <img src={bigImgSrc} alt=" " />
+                <div className={styles.popupHidden}>
+                    <button className={styles.popupClose}>X</button>
+                    <img src=" " alt="" className={styles.popupImg} />
+                    <button className={styles.popupArrowright}> o </button>
+                    <button className={styles.popupArrowleft}> o </button>
+                </div>
             </div>
-            </div>
+
             <div className={styles.pictures} id="gallery">
                 {data.map((item, index) => {
                     return (
-                        <div className={styles.pics} key={index} onClick={() => getImg(item.imgSrc)}>
+                        <div className={styles.pics} key={index} >
                             <img src={item.imgSrc} style={{ width: "95%" }} alt="#" />
                         </div>
                     )
@@ -114,6 +128,8 @@ const Gallery = () => {
             </div>
         </>
     );
+
+
 }
 
 export default Gallery;
