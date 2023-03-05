@@ -1,15 +1,9 @@
 import React from "react";
 import styles from "./Header.module.css";
-/*import withMousePosition from "./withMousePosition";*/
-import { Link, animateScroll as scroll } from "react-scroll";
+import { Link } from "react-scroll";
 
 function Header(props) {
-    /*const paralaxe = {
-        transform: `translate(
-        ${props.mouseX / 100}px,
-        ${props.mouseY / 100}px
-    )`
-    };*/
+  
 
     return (
 
@@ -38,7 +32,7 @@ function Header(props) {
                     </li>
                 </ul>
             </div>
-            <div className={styles.wallpaper} /*style={paralaxe}*/></div>
+            <div className={styles.wallpaper}></div>
         </div>
 
     );

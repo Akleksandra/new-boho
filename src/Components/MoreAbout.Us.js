@@ -1,6 +1,6 @@
 import styles from "./MoreAboutUs.module.css";
 import bohotlo from "../Images/GalleryImg/bohotlo.jpg";
-import namiocik from "../Images/namiocik.png";
+/*import namiocik from "../Images/namiocik.png";*/
 
 
 function MoreAboutUs() {

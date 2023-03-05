@@ -1,5 +1,4 @@
 import styles from "./Footer.module.css"
-import { Link } from "react-scroll";
 import email from "../Images/icons/email.jpg";
 import olx from "../Images/icons/olx.png";
 import instagram from "../Images/icons/instagram-nowa-ikona_1057-2227.jpg";
