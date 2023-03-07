@@ -85,51 +85,78 @@ const Gallery = () => {
 
     const [window, setWindow] = useState(false);
     const [bigImgSrc, setBigImgSrc] = useState("");
-    const [isActive, setIsActive] = useState(true);
+    const [activeImage, setActiveImage] = useState(null);
+    
+    
+    function currentPhoto () {
+        const [currentIndex, setCurrentIndex] = useState();
+       
+        function setCurrent(newIndex) {
+         setCurrentIndex(currentIndex === newIndex ? undefined : newIndex);
+        }
+       
+        return [currentIndex, setCurrent];
+    }
 
-    const [open, setOpen]= useState(false);
+        const goToPrevious= ()=>{
+            const firstPhoto = currentIndex=== 0; 
+            const newIndex = firstPhoto ? data.length -1 : currentIndex -1;
+           setCurrent = ( newIndex );
+           }
+        
+           const goToNext = ()=>{
+            const Lastphoto = currentIndex === data.length -1;
+            const newIndex = Lastphoto ? 0 : currentIndex +1;
+           setCurrent (newIndex);
+           }
+        
 
     const getImg = (imgSrc) => {
         setBigImgSrc(imgSrc);
         setWindow(true);
-
     }
-    
 
-    const handleClick = event => {
-        setIsActive(current => !current);
+
+    const handleClick = item => {
+        setActiveImage(item)
     };
-    const closePopup =()=>{
 
-    }
+    const closePopup = () => {
+        setActiveImage(null)
+    };
+
 
 
     return (
         <>
-            <div className={isActive ? `${styles.popup}` : ''} onClick={handleClick}>
-                <img src={bigImgSrc} alt=" " />
-                <div className={styles.popupHidden}>
-                    <button className={styles.popupClose}>X</button>
-                    <img src=" " alt="" className={styles.popupImg} />
-                    <button className={styles.popupArrowright}> o </button>
-                    <button className={styles.popupArrowleft}> o </button>
+            {activeImage &&
+                <div className={styles.popup} >
+
+                    <button className={styles.popupClose} onClick={closePopup}>X</button>
+                    <img src={activeImage.imgSrc} alt="" className={styles.popupImg} style={{ width: "80%" }} />
+                    <button className={styles.popupArrowright} onClick={goToPrevious} > o </button>
+                    <button className={styles.popupArrowleft} onClick={goToNext}> o </button>
                 </div>
-            </div>
+            }
 
             <div className={styles.pictures} id="gallery">
-                {data.map((item, index) => {
-                    return (
-                        <div className={styles.pics} key={index} >
-                            <img src={item.imgSrc} style={{ width: "95%" }} alt="#" />
-                        </div>
-                    )
-                })}
+                {data.map((item, currentIndex) => 
+                (
+                    <div className={styles.pics} key={index} onClick={() => handleClick(item)} >
+                        <img src={item.imgSrc} style={{ width: "95%" }} alt="#" />
+                    </div>
+                )
+                )}
 
             </div>
         </>
+
     );
+                }
+                }
+                
+            
 
-
-}
+            
 
 export default Gallery;
